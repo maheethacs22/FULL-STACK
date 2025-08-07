@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instructor Management</title>
+    <link rel="stylesheet" href="ai.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Admin</h2>
+        <ul>
+            <li >
+                <a href="admin.html">Dashboard</a>
+            </li>
+            <li>
+                <a href="action.html">Courses</a>
+            </li>
+            <li>
+                <a href="student.html">Students</a>
+            </li>
+            <li class="active">
+                <a href="ai.html">Instructor</a>
+            </li>
+            <li>
+                <a href="#">Change password</a>
+            </li>
+            <li>
+                <a href="#">Logout</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <div class="header">
+            <h1>Instructors</h1>
+            <input type="text" placeholder="Search" class="search-box">
+            <div class="profile-icon">M</div>
+        </div>
+
+        <div class="instructors-grid">
+            <!-- Instructor 1 -->
+            <div class="instructor-card">
+                <div class="avatar">
+                    <div class="circle-icon">P</div>
+                </div>
+                <h3>Pooja</h3>
+                <p>2D Art</p>
+                <div class="card-buttons">
+                    <button class="btn profile-btn" onclick="openProfile('Pooja', 28, '123-456-7890', 'pooja@example.com')">Profile</button>
+                    <button class="btn chat-btn" onclick="openChat('Pooja')">Chat</button>
+                </div>
+            </div>
+
+            <!-- Instructor 2 -->
+            <div class="instructor-card">
+                <div class="avatar">
+                    <div class="circle-icon">D</div>
+                </div>
+                <h3>Dharani</h3>
+                <p>3D Modelling</p>
+                <div class="card-buttons">
+                    <button class="btn profile-btn" onclick="openProfile('Dharani', 32, '234-567-8901', 'dharani@example.com')">Profile</button>
+                    <button class="btn chat-btn" onclick="openChat('Dharani')">Chat</button>
+                </div>
+            </div>
+
+            <!-- Instructor 3 -->
+            <div class="instructor-card">
+                <div class="avatar">
+                    <div class="circle-icon">R</div>
+                </div>
+                <h3>Riyona</h3>
+                <p>UI/UX</p>
+                <div class="card-buttons">
+                    <button class="btn profile-btn" onclick="openProfile('Riyona', 29, '345-678-9012', 'riyona@example.com')">Profile</button>
+                    <button class="btn chat-btn" onclick="openChat('Riyona')">Chat</button>
+                </div>
+            </div>
+
+            <!-- Instructor 4 -->
+            <div class="instructor-card">
+                <div class="avatar">
+                    <div class="circle-icon">J</div>
+                </div>
+                <h3>Jeevi</h3>
+                <p>Animation</p>
+                <div class="card-buttons">
+                    <button class="btn profile-btn" onclick="openProfile('Jeevi', 35, '456-789-0123', 'jeevi@example.com')">Profile</button>
+                    <button class="btn chat-btn" onclick="openChat('Jeevi')">Chat</button>
+                </div>
+            </div>
+
+            <!-- Instructor 5 -->
+            <div class="instructor-card">
+                <div class="avatar">
+                    <div class="circle-icon">V</div>
+                </div>
+                <h3>Varun</h3>
+                <p>Graphic Design</p>
+                <div class="card-buttons">
+                    <button class="btn profile-btn" onclick="openProfile('Varun', 30, '567-890-1234', 'varun@example.com')">Profile</button>
+                    <button class="btn chat-btn" onclick="openChat('Varun')">Chat</button>
+                </div>
+            </div>
+
+            <!-- Instructor 6 -->
+            <div class="instructor-card">
+                <div class="avatar">
+                    <div class="circle-icon">A</div>
+                </div>
+                <h3>Amit</h3>
+                <p>Django</p>
+                <div class="card-buttons">
+                    <button class="btn profile-btn" onclick="openProfile('Amit', 33, '678-901-2345', 'amit@example.com')">Profile</button>
+                    <button class="btn chat-btn" onclick="openChat('Amit')">Chat</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Profile Modal -->
+    <div id="profileModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('profileModal')">&times;</span>
+            <h2 id="profileName"></h2>
+            <p>Age: <span id="profileAge"></span></p>
+            <p>Contact Number: <span id="profileContact"></span></p>
+            <p>Email ID: <span id="profileEmail"></span></p>
+        </div>
+    </div>
+
+    <!-- Chat Modal -->
+    <div id="chatModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('chatModal')">&times;</span>
+            <h2>Chat with <span id="chatInstructorName"></span></h2>
+            <div class="chat-box">
+                <!-- Chat messages go here -->
+            </div>
+            <textarea id="chatInput" placeholder="Type your message..."></textarea>
+            <button class="send-btn">Send</button>
+        </div>
+    </div>
+
+    <script src="ai.js"></script>
+</body>
+</html>

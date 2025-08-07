@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student List</title>
+    <link rel="stylesheet" href="stu.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <h1>Admin</h1>
+            <ul>
+                <li>
+                    <a href="admin.html">Dashboard</a>
+                </li>
+                <li>
+                    <a href="action.html">Courses</a>
+                </li>
+                <li class="active">
+                    <a href="student.html">Students</a>
+                </li>
+                <li>
+                    <a href="ai.html">Instructor</a>
+                </li>
+                <li>
+                    <a href="#">Change password</a>
+                </li>
+                <li>
+                    <a href="#">Logout</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <h2 class="list-title">List of students</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Student ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Contact</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="student-list">
+                    <tr>
+                        <td>101</td>
+                        <td>Kavya</td>
+                        <td>kavya.cs22@bitsathy.ac.in</td>
+                        <td>
+                            <button class="contact-btn">📞</button>
+                            <button class="contact-btn">✉️</button>
+                        </td>
+                        <td>
+                            <button class="edit-btn">✏️</button>
+                            <button class="delete-btn">🗑️</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>102</td>
+                        <td>Ram</td>
+                        <td>ram.ad22@bitsathy.ac.in</td>
+                        <td>
+                            <button class="contact-btn">📞</button>
+                            <button class="contact-btn">✉️</button>
+                        </td>
+                        <td>
+                            <button class="edit-btn">✏️</button>
+                            <button class="delete-btn">🗑️</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>103</td>
+                        <td>Priya</td>
+                        <td>priya.it222@bitsathy.ac.in</td>
+                        <td>
+                            <button class="contact-btn">📞</button>
+                            <button class="contact-btn">✉️</button>
+                        </td>
+                        <td>
+                            <button class="edit-btn">✏️</button>
+                            <button class="delete-btn">🗑️</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>104</td>
+                        <td>Sam</td>
+                        <td>sam.cs22@bitsathy.ac.in</td>
+                        <td>
+                            <button class="contact-btn">📞</button>
+                            <button class="contact-btn">✉️</button>
+                        </td>
+                        <td>
+                            <button class="edit-btn">✏️</button>
+                            <button class="delete-btn">🗑️</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>105</td>
+                        <td>Dhiya</td>
+                        <td>dhiya.cs22@bitsathy.ac.in</td>
+                        <td>
+                            <button class="contact-btn">📞</button>
+                            <button class="contact-btn">✉️</button>
+                        </td>
+                        <td>
+                            <button class="edit-btn">✏️</button>
+                            <button class="delete-btn">🗑️</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Edit Student Modal -->
+    <div id="edit-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Edit Student</h2>
+            <form id="edit-form">
+                <label for="student-id">Student ID</label>
+                <input type="text" id="student-id" name="student-id" readonly>
+
+                <label for="student-name">Name</label>
+                <input type="text" id="student-name" name="student-name" required>
+
+                <label for="student-email">Email</label>
+                <input type="email" id="student-email" name="student-email" required>
+
+                <button type="submit" class="save-btn">Save Changes</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="stu.js"></script>
+</body>
+</html>

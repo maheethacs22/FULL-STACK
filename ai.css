@@ -1,0 +1,167 @@
+/* Sidebar */
+.sidebar {
+    width: 220px;
+    height: 100vh;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding-top: 20px;
+    position: fixed;
+    font-size: 18px;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.sidebar ul li {
+    padding: 15px;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.sidebar ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    display: block;
+    padding-left: 10px;
+}
+
+.sidebar ul li.active a {
+    background-color: #34495e;
+    border-radius: 4px;
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 220px;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.search-box {
+    width: 300px;
+    padding: 12px;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile-icon {
+    width: 50px;
+    height: 50px;
+    background-color: #34495e;
+    color: #ecf0f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 80%;
+    font-size: 20px;
+}
+
+/* Instructors Grid */
+.instructors-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+/* Instructor Card */
+.instructor-card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.instructor-card:hover {
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.avatar {
+    margin-bottom: 15px;
+}
+
+.circle-icon {
+    width: 70px;
+    height: 70px;
+    background-color: #6a5acd;
+    color: white;
+    border-radius: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    margin: 0 auto;
+}
+
+.card-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.btn {
+    background-color: #6a5acd;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #483d8b;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 70%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

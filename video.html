@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to 3D Modelling</title>
+    <link rel="stylesheet" href="video.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Introduction to 3D Modelling</h1>
+
+        <!-- Main Video and Playlist Container -->
+        <div class="video-playlist-container">
+            <!-- Video Box with Thumbnail -->
+            <div id="video-container">
+                <div class="thumbnail">
+                    <img src="./images/Screenshot 2024-08-26 101940.png" alt="Video Thumbnail" id="thumbnail">
+                    <div class="play-button-overlay" onclick="playVideo()">
+                        <img src="./images/playbutton.png" alt="Play Button">
+                    </div>
+                </div>
+                <div id="player" class="youtube-player"></div>
+            </div>
+
+            <!-- Playlist Section -->
+            <div class="playlist">
+                <h2>Playlist</h2>
+                <ul>
+                    <li onclick="changeVideo('VIDEO_ID_1')">
+                        <img src="./images/3d_1.jpg" alt="Video 1 Thumbnail"> Introduction to 3D Modelling
+                    </li>
+                    <li onclick="changeVideo('VIDEO_ID_2')">
+                        <img src="./images/3d_2.jpg" alt="Video 2 Thumbnail"> User Interface Overview
+                    </li>
+                    <li onclick="changeVideo('VIDEO_ID_3')">
+                        <img src="./images/3d_3.webp" alt="Video 3 Thumbnail"> Toolbar Introduction
+                    </li>
+                    <li onclick="changeVideo('VIDEO_ID_4')">
+                        <img src="./images/learning2.jpg" alt="Video 4 Thumbnail"> Properties Panel
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Doubts Section -->
+        <div class="doubts-section">
+            <label for="doubts">Drop your doubts here</label>
+            <textarea id="doubts" placeholder="Type here..."></textarea>
+            <button id="sendBtn" onclick="sendDoubt()">Send</button>
+        </div>
+
+        <!-- Next Button -->
+        <button id="nextBtn" onclick="goToNextPage()" disabled>Next</button>
+    </div>
+
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="video.js"></script>
+
+    <script>
+        // Enable the Next button after video interaction
+        function enableNextButton() {
+            document.getElementById('nextBtn').disabled = false;
+        }
+
+        // Redirect to the form.html page
+        function goToNextPage() {
+            window.location.href = 'form.html';
+        }
+
+        // Dummy function for play button (replace with actual YouTube API play logic)
+        function playVideo() {
+            enableNextButton(); // Enable next button on play
+            // Add your YouTube play code here
+        }
+
+        // Dummy function to simulate changing videos (replace with actual YouTube API change video logic)
+        function changeVideo(videoId) {
+            // Add your YouTube change video code here
+        }
+
+        // Dummy function to simulate sending doubts (replace with actual send logic)
+        function sendDoubt() {
+            let doubt = document.getElementById('doubts').value;
+            alert("Your doubt has been sent: " + doubt);
+        }
+    </script>
+</body>
+</html>

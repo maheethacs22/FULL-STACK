@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <h1>Admin</h1>
+            <ul>
+                <li class="active">
+                    <a href="#">Dashboard</a>
+                </li>
+                <li>
+                    <a href="action.html">Courses</a>
+                </li>
+                <li>
+                    <a href="student.html">Students</a>
+                </li>
+                <li>
+                    <a href="ai.html">Instructor</a>
+                </li>
+                <li>
+                    <a href="#">Change password</a>
+                </li>
+                <li>
+                    <a href="#">Logout</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Top Bar -->
+            <div class="top-bar">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search...">
+                    <button class="search-button">🔍</button>
+                </div>
+                <div class="profile-icon">M</div>
+            </div>
+
+            <!-- Dashboard Cards -->
+            <div class="dashboard-cards">
+                <div class="card red">
+                    <h3>Courses</h3>
+                    <p>6</p>
+                </div>
+                <div class="card blue">
+                    <h3>Students</h3>
+                    <p>8</p>
+                </div>
+                <div class="card purple">
+                    <h3>Instructors</h3>
+                    <p>5</p>
+                </div>
+            </div>
+
+            <!-- Performance and Active Profiles Section -->
+            <div class="performance-section">
+                <div class="performance-graph">
+                    <h3>Performance</h3>
+                    <img src="./images/profile (1).png" alt="Performance Graph">
+                </div>
+                <div class="active-profiles">
+                    <h3>Active Profiles</h3>
+                    <img src="./images/profile (2).png" alt="Active Profiles Graph">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+</html>

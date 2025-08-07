@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses List</title>
+    <link rel="stylesheet" href="action.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <h1>Admin</h1>
+            <ul>
+                <li>
+                    <a href="admin.html">Dashboard</a>
+                </li>
+                <li class="active">
+                    <a href="action.html">Courses</a>
+                </li>
+                <li>
+                    <a href="student.html">Students</a>
+                </li>
+                <li>
+                    <a href="ai.html">Instructor</a>
+                </li>
+                <li>
+                    <a href="#">Change password</a>
+                </li>
+                <li>
+                    <a href="#">Logout</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <h2 class="list-title">List of courses</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Course ID</th>
+                        <th>Name</th>
+                        <th>Author</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="course-list">
+                    <tr>
+                        <td>10</td>
+                        <td>2D Art</td>
+                        <td>Asha</td>
+                        <td>
+                            <button class="edit-btn">✏️</button>
+                            <button class="delete-btn">🗑️</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>3D Modelling</td>
+                        <td>Vikos</td>
+                        <td>
+                            <button class="edit-btn">✏️</button>
+                            <button class="delete-btn">🗑️</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>Unity Development</td>
+                        <td>John</td>
+                        <td>
+                            <button class="edit-btn">✏️</button>
+                            <button class="delete-btn">🗑️</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>Animation</td>
+                        <td>Kim</td>
+                        <td>
+                            <button class="edit-btn">✏️</button>
+                            <button class="delete-btn">🗑️</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td>Graphic Design</td>
+                        <td>Manish</td>
+                        <td>
+                            <button class="edit-btn">✏️</button>
+                            <button class="delete-btn">🗑️</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="action.js"></script>
+</body>
+</html>

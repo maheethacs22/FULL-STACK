@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achievements Page</title>
+    <link rel="stylesheet" href="achievements.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Achievements</h1>
+        </div>
+        <div class="content">
+            <div id="achievements-container" class="achievements-container">
+                <!-- Achievements will be dynamically generated here -->
+            </div>
+        </div>
+        <div class="back-button">
+            <button onclick="window.location.href='index3.html'">Back to Home</button>
+        </div>
+    </div>
+
+    <!-- Add Achievement Modal -->
+    <div id="addAchievementModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeModal()">&times;</span>
+            <h2>Add Achievement</h2>
+            <form id="achievement-form">
+                <label for="achievement-title">Title:</label>
+                <input type="text" id="achievement-title" required>
+                <label for="achievement-description">Description:</label>
+                <textarea id="achievement-description" required></textarea>
+                <button type="button" onclick="submitAchievement()">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="achievements.js"></script>
+</body>
+</html>

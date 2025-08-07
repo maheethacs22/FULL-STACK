@@ -1,0 +1,143 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.outer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: #ebebeb;
+}
+
+.login-container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+    border: 2px solid #ddd;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+    position: relative;
+}
+
+.input-group label {
+    font-size: 12px;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 25px;
+    border: 1px solid #ddd;
+    background-color: #f0f0f0;
+    margin-top: 10px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+    outline: none;
+}
+
+.checkbox-group {
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.checkbox-group label {
+    font-size: 12px;
+    color: #666;
+}
+
+.signin-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #d3d3d3;
+    color: #333;
+    border: none;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.signin-btn:hover {
+    background-color: #c3c3c3;
+}
+
+.divider {
+    margin: 30px 0;
+    position: relative;
+    color: #888;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.divider span {
+    padding: 0 10px;
+    background-color: #fff;
+}
+
+.divider::before, .divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background-color: #ddd;
+}
+
+.google-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.google-btn img {
+    margin-right: 8px;
+    height: 20px;
+    width: 20px;
+}
+
+.google-btn:hover {
+    background-color: #f5f5f5;
+}

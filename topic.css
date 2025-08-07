@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #2b2b2b;
+    color: white;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.header {
+    text-align: left;
+    padding: 20px;
+    font-size: 28px;
+    background-color: #3a3a3a;
+    margin-bottom: 20px;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.image-section {
+    width: 50%;
+}
+
+.modelling-image {
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.details-section {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #3a3a3a;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.details-section p {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.icon {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.learning-section {
+    background-color: #fce4ec;
+    color: black;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.learning-section h2 {
+    margin-bottom: 20px;
+}
+
+.learning-section ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.learning-section ul li {
+    width: 48%;
+    margin-bottom: 10px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.learning-section ul li:before {
+    content: "➔";
+    margin-right: 10px;
+    color: black;
+}
+
+.description-section {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.description-section h2 {
+    margin-bottom: 15px;
+}
+
+.description-section p {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.back-to-home {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.back-to-home button {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.back-to-home button:hover {
+    background-color: darkred;
+}
