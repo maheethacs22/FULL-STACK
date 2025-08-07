@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Submission</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            text-align: center;
+        }
+        .container h1 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #333;
+        }
+        .form-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .form-group input[type="file"] {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        .form-group input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .form-group input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        .star-rating {
+            direction: rtl;
+            display: inline-flex;
+        }
+        .star-rating input[type="radio"] {
+            display: none;
+        }
+        .star-rating label {
+            font-size: 30px;
+            color: #ddd;
+            cursor: pointer;
+        }
+        .star-rating input[type="radio"]:checked ~ label {
+            color: #f5a623;
+        }
+        .star-rating label:hover,
+        .star-rating label:hover ~ label {
+            color: #f5a623;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Task Submission</h1>
+        <form id="taskForm" onsubmit="return submitForm(event)">
+            <div class="form-group">
+                <label for="outputScreenshot">1. Output Screenshot</label>
+                <input type="file" id="outputScreenshot" name="outputScreenshot" required>
+            </div>
+            <div class="form-group">
+                <label for="sourceFile">2. Source File</label>
+                <input type="file" id="sourceFile" name="sourceFile" required>
+            </div>
+            <div class="form-group">
+                <label>3. Ratings for the Course</label>
+                <div class="star-rating">
+                    <input type="radio" id="courseStar5" name="courseRating" value="5" required><label for="courseStar5">&#9733;</label>
+                    <input type="radio" id="courseStar4" name="courseRating" value="4"><label for="courseStar4">&#9733;</label>
+                    <input type="radio" id="courseStar3" name="courseRating" value="3"><label for="courseStar3">&#9733;</label>
+                    <input type="radio" id="courseStar2" name="courseRating" value="2"><label for="courseStar2">&#9733;</label>
+                    <input type="radio" id="courseStar1" name="courseRating" value="1"><label for="courseStar1">&#9733;</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>4. Ratings for the Instructor</label>
+                <div class="star-rating">
+                    <input type="radio" id="instructorStar5" name="instructorRating" value="5" required><label for="instructorStar5">&#9733;</label>
+                    <input type="radio" id="instructorStar4" name="instructorRating" value="4"><label for="instructorStar4">&#9733;</label>
+                    <input type="radio" id="instructorStar3" name="instructorRating" value="3"><label for="instructorStar3">&#9733;</label>
+                    <input type="radio" id="instructorStar2" name="instructorRating" value="2"><label for="instructorStar2">&#9733;</label>
+                    <input type="radio" id="instructorStar1" name="instructorRating" value="1"><label for="instructorStar1">&#9733;</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+
+    <script>
+        function submitForm(event) {
+            event.preventDefault(); // Prevent the form from submitting in the traditional way
+            window.location.href = "submit.html"; // Redirect to submit page
+        }
+    </script>
+</body>
+</html>

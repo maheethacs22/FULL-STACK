@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Page</title>
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="title">Your Projects</h1>
+        </div>
+        <div class="content">
+            <div class="project-list">
+                <div class="project-card">
+                    <h2>Add Your First Project</h2>
+                    <p>Click below to start your project journey!</p>
+                    <button class="add-project-button" onclick="showProjectForm()">Start Now</button>
+                </div>
+            </div>
+            <div class="project-form" id="project-form">
+                <input type="text" id="project-title" class="input-box" placeholder="Project Title">
+                <textarea id="project-description" class="input-box" placeholder="Project Description"></textarea>
+                <span id="error-message" class="error-message"></span>
+                <button class="submit-button" onclick="validateForm()">Add Project</button>
+            </div>
+            <div class="back-button-container">
+                <a href="index3.html" class="back-button">Back to Home</a>
+            </div>
+        </div>
+    </div>
+    <script src="project.js"></script>
+</body>
+</html>

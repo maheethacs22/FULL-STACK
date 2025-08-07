@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Tracking</title>
+    <link rel="stylesheet" href="progress.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Progress Tracking</h1>
+            <p>Track your progress for each course below:</p>
+        </div>
+
+        <div class="progress-section">
+            <div class="course">
+                <h2>2D Art</h2>
+                <div class="progress-bar" id="progress-2d-art">
+                    <div class="progress"></div>
+                </div>
+                <p>Completed: <span id="percent-2d-art">0%</span></p>
+                <p>Deadline: <span class="deadline">30th September 2024</span></p>
+                <input type="range" min="0" max="100" value="0" id="slider-2d-art" class="slider">
+            </div>
+
+            <div class="course">
+                <h2>3D Modelling</h2>
+                <div class="progress-bar" id="progress-3d-modelling">
+                    <div class="progress"></div>
+                </div>
+                <p>Completed: <span id="percent-3d-modelling">0%</span></p>
+                <p>Deadline: <span class="deadline">15th October 2024</span></p>
+                <input type="range" min="0" max="100" value="0" id="slider-3d-modelling" class="slider">
+            </div>
+
+            <div class="course">
+                <h2>Animation</h2>
+                <div class="progress-bar" id="progress-animation">
+                    <div class="progress"></div>
+                </div>
+                <p>Completed: <span id="percent-animation">0%</span></p>
+                <p>Deadline: <span class="deadline">1st November 2024</span></p>
+                <input type="range" min="0" max="100" value="0" id="slider-animation" class="slider">
+            </div>
+
+            <div class="course">
+                <h2>Unity Development</h2>
+                <div class="progress-bar" id="progress-unity">
+                    <div class="progress"></div>
+                </div>
+                <p>Completed: <span id="percent-unity">0%</span></p>
+                <p>Deadline: <span class="deadline">20th November 2024</span></p>
+                <input type="range" min="0" max="100" value="0" id="slider-unity" class="slider">
+            </div>
+
+            <div class="course">
+                <h2>Graphic Design</h2>
+                <div class="progress-bar" id="progress-graphic-design">
+                    <div class="progress"></div>
+                </div>
+                <p>Completed: <span id="percent-graphic-design">0%</span></p>
+                <p>Deadline: <span class="deadline">10th December 2024</span></p>
+                <input type="range" min="0" max="100" value="0" id="slider-graphic-design" class="slider">
+            </div>
+        </div>
+
+        <!-- Back Button -->
+        <div class="back-button-container">
+            <a href="index3.html" class="back-button">Back to Home</a>
+        </div>
+    </div>
+
+    <script src="progress.js"></script>
+</body>
+</html>
